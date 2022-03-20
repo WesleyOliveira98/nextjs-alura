@@ -1,4 +1,4 @@
-import * as React from 'react';
+import Head from 'next/head';
 import Link from "../src/components/Link";
 
 export async function getStaticProps() {
@@ -17,6 +17,9 @@ export async function getStaticProps() {
 export default function FAQ({ faq }) {
     return (
         <div>
+            <Head>
+                <title>FAQ - Alura Cases Campanha</title>
+            </Head>
             <h1>Alura Cases - FAQ</h1>
             <Link href="/">
                 Ir para Home
